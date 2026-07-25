@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean François Martin Diouf — Développeur front-end</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header class="nav">
+    <a href="#" class="nav__logo">MON PORTEFOLIO</a>
+    <nav class="nav__links">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+ 
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Étudiant en DUT Informatique à l'Ecole Supérieure Polytechnique de Dakar </p>
+      <h1>Coder, c'est voir<br>une page blanche<br><span class="highlight">devenir vivante.</span></h1>
+      <p class="hero__sub">
+        J'apprends à transformer des lignes de code en interfaces
+        qu'on a envie de regarder — et d'utiliser.
+      </p>
+      <div class="hero__actions">
+        <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn--ghost">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="dot dot--coral"></span>
+          <span class="dot dot--lime"></span>
+          <span class="dot dot--sky"></span>
+        </div>
+        <pre class="terminal__code"><code id="typedCode"></code></pre>
+      </div>
+     
+    </div>
+  </section>
+
+  
+  <section id="apropos" class="section apropos">
+    <p class="section__eyebrow">À propos</p>
+    <div class="apropos__grid">
+      <p class="apropos__text">
+        Actuellement en formation en informatique, j'apprends à construire
+        des interfaces web solides — du HTML/CSS bien structuré jusqu'aux
+        bases de données avec MySQL. Ce qui me fait avancer, c'est ce moment
+        très concret où du code devient une page qu'on peut voir, cliquer,
+        utiliser.
+      </p>
+      <p class="apropos__text">
+        Mon objectif&nbsp;: élargir mes compétences vers le
+        <strong>full-stack</strong>, pour comprendre et construire un projet
+        de bout en bout — de l'interface jusqu'à la logique qui la fait
+        tourner.
+      </p>
+    </div>
+  </section>
+
+  
+  <section id="projets" class="section projets">
+    <p class="section__eyebrow">Projets</p>
+    <h2 class="section__title">Ce que j'ai construit</h2>
+
+    <div class="projects-grid">
+
+      
+      <article class="project-card" tabindex="0">
+        <div class="project-card__face project-card__face--code">
+          <pre><code>&lt;div class="cv"&gt;
+  &lt;h1&gt;Jean François Martin Diouf&lt;/h1&gt;
+  &lt;p&gt;Dev&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+        <div class="project-card__face project-card__face--preview">
+          <span class="project-card__tag">HTML · CSS</span>
+          <h3>UN projet en C</h3>
+          <p>
+            Ce projet portait sur les différents algorithmes
+             de tri où l'on devait mesurer les temps d'execution
+             en fonction du nombre d'éléments du tableau
+          </p>
+          
+          <a href="https://depot-cv-2.onrender.com" class="project-card__link">Voir le projet →</a>
+        </div>
+      </article>
+
+      
+      <article class="project-card project-card--placeholder" tabindex="0">
+        <div class="project-card__face project-card__face--preview">
+          <span class="project-card__tag">Prochain projet</span>
+          <h3>À venir</h3>
+          
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  
+  <section id="competences" class="section competences">
+    <p class="section__eyebrow">Compétences</p>
+    <h2 class="section__title">Ma boîte à outils</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+
+        <ul class="skill-tags">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>C</li>
+          <li>JavaScript</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section contact">
+    <p class="section__eyebrow">Contact</p>
+    <h2 class="section__title">Échangeons</h2>
+    <p class="contact__text">
+      Envie d'échanger ou de suivre mon parcours&nbsp;? N'hésite pas à me
+      contacter.
+    </p>
+    <!-- TODO : remplace les liens ci-dessous par tes vraies infos -->
+    <div class="contact__links">
+  <a href="mailto:martindiouf@gmail.com">Email</a>
+  <a href="https://github.com/martindiouf">GitHub</a>
+  <a href="tel:+221XXXXXXXXX">+221 XX XXX XX XX</a>
+  <a href="https://depot-cv-2.onrender.com" target="_blank" rel="noopener">CV</a>
+</div>
+  </section>
+
+  <footer class="footer">
+    <p>Jean François Martin Diouf  — <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
